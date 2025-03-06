@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment files
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE or editor folders
+.vscode/
+.idea/
+
+# Build directories (if you have any)
+build/
+dist/
+
+# Optional: Ignoring the Dockerfile itself
+Dockerfile
+
+# Optional: Ignore test reports or coverage files
+coverage/
+
+# Optional: Ignore any temporary files
+*.tmp
+*.swp
+*.bak

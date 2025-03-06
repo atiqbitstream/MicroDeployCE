@@ -1,0 +1,27 @@
+# Ignore node_modules (they will be installed in the Docker container)
+node_modules
+
+# Ignore log files
+*.log
+
+# Ignore the Dockerfile itself (if you don't want it copied into the image)
+Dockerfile
+
+# Ignore local environment files (like .env files)
+.env
+
+# Ignore git files
+.git
+.gitignore
+
+# Ignore npm-debug logs
+npm-debug.log
+
+# Ignore any temporary files or directories
+*.tmp
+*.swp
+*.bak
+
+# Ignore the build directory if you have one
+build/
+dist/
