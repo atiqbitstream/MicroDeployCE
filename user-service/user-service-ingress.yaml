@@ -1,4 +1,4 @@
-apiversion: networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: user-service
@@ -7,11 +7,11 @@ metadata:
 spec:
   ingressClassName: kong
   rules:
-    - host: 161.202.175.76
+    - host: ""
       http:
         paths:
           - path: /user
-            pathType: prefix
+            pathType: Prefix
             backend:
               service:
                 name: user-service
