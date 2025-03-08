@@ -1,0 +1,39 @@
+name: Deploy to IBM Cloud Code Engine
+
+on:
+  push:
+    branches:
+        - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout code
+      uses: actions/checkout@v3
+
+    - name: Install IBM cloud CLI
+      run: |
+        curl -fsSL https://clis.cloud.ibm/install/linux | sh
+        ibmcloud login --apikey ${{secrets.IBM_CLOUD_API_KEY}} au.icr.io
+        docker push au.icr.io/mycodeengine/user-service:latest
+
+    - name: Build & Push Docker Image(User Service)
+      run: |
+        docker build -t au.icr.io/mycodeengine/user-service:latest ./user-service
+        docker push -u iamapikey -p ${{secrets.IBM_CLOUD_API_KEY}} au.icr.io
+        docker push au.icr.io/mycodeengine/user-service:latest
+
+    - name: Deploy User Service to Code Engine
+      run: |
+        ibmcloud ce application update --name user-service --image au.icr.io/mycodeengine/user-service:latest
+
+    - name: Build & Push Docker Image(order service)
+      run: |
+        docker build -t au.icr.io/mycodeengine/order-service:latest ./order-service
+        docker push au.icr.io/mycodeengine/order-service:latest
+
+    - name: Deploy Order Service to Code Engine
+      run: |
+        ibmcloud ce application update --name order-service --image au.icr.io/mycodeengine/order-service:latest    
