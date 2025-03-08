@@ -5,7 +5,7 @@ app.get("/orders",(req,res)=>{
     res.json([{id:101, item: "laptop"},{id:102, item:"phone"}])
 });
 
-app.get("/expiredOrders",(req,res)=>{
+app.get("/expiredOrder",(req,res)=>{
     res.json([{id:102, item: "Trackball"},{id:102, item:"windows xp"}])
 });
 
