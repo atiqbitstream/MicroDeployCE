@@ -21,8 +21,6 @@ Thumbs.db
 build/
 dist/
 
-# Optional: Ignoring the Dockerfile itself
-Dockerfile
 
 # Optional: Ignore test reports or coverage files
 coverage/
