@@ -4,6 +4,9 @@ metadata:
   name: user-service
   annotations:
     konghq.com/strip-path: "true"
+    konghq.com/protocols: "https"
+    konghq.com/https-redirect-status-code: "301"
+    konghq.com/upstream-url: "https://user-service.1sok4fsjn6yq.au-syd.codeengine.appdomain.cloud"
 spec:
   ingressClassName: kong
   rules:
