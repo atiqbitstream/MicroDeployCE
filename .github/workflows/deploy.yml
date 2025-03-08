@@ -21,6 +21,7 @@ jobs:
         docker build -t au.icr.io/mycodeengine/user-service:latest ./user-service
         docker login -u iamapikey -p ${{secrets.IBM_CLOUD_API_KEY}} au.icr.io
         ibmcloud target -g Default
+        ibmcloud ce project select -n my-devops-platofrm
         docker push au.icr.io/mycodeengine/user-service:latest
         
     - name: Deploy User Service to Code Engine
