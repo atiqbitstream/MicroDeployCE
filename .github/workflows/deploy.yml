@@ -12,7 +12,7 @@ jobs:
       
     - name: Install IBM cloud CLI
       run: |
-        curl -fsSL https://clis.cloud.ibm/install/linux | sh
+        curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
         ibmcloud login --apikey ${{secrets.IBM_CLOUD_API_KEY}} -r au-syd
         
     - name: Build & Push Docker Image (User Service)
