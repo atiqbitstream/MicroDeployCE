@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: order-service
+  annotations:
+    konghq.com/strip-path: "true"
+spec:
+  ingressClassName: kong
+  rules:
+    - host: 161.202.175.76
+      http:
+        paths:
+          - path: /order
+            pathType: prefix
+            backend:
+              service:
+                name: order-service
+                port: 
+                  number: 80    
