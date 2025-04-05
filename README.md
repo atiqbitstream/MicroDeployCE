@@ -74,6 +74,12 @@ The services are containerized using Docker and deployed on IBM Cloud. Kong API 
 
 ![Image](https://github.com/user-attachments/assets/8efd11a1-7a03-4081-bf96-5ff07a2217ac) 
 
+
+Here is the full tutorial : 
+
+<iframe width="560" height="315" src="https://youtu.be/dVB-dEDAjCQ?feature=shared" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ##  Getting Started
 
 ### Prerequisites
