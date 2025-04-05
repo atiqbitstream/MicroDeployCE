@@ -54,7 +54,7 @@ The services are containerized using Docker and deployed on IBM Cloud. Kong API 
   - Automated Provisioning Scripts
 
 
-## 📐 Architecture Overview
+##  Architecture Overview
 
 **Key Components:**
 1. **Kong API Gateway**: Single entry point with security policies
@@ -225,7 +225,7 @@ helm install postgres bitnami/postgresql \
   --set volumePermissions.enabled=true
   ```
 
-## 📈 Future Improvements
+## Future Improvements
 
 -   Implement distributed tracing with Jaeger
     
