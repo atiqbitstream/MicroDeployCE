@@ -19,7 +19,7 @@ The services are containerized using Docker and deployed on IBM Cloud. Kong API 
 
 ----------
 
-## 🎯 Objectives
+##  Objectives
 
 -   Deploy containerized microservices using IBM Cloud Code Engine
     
@@ -34,7 +34,7 @@ The services are containerized using Docker and deployed on IBM Cloud. Kong API 
     
 ----------
 
-## ✨ Features
+## Features
 
 - **Distributed Microservices Architecture**
   - User Service (Node.js/Express)
@@ -62,19 +62,19 @@ The services are containerized using Docker and deployed on IBM Cloud. Kong API 
 3. **Persistent Storage**: PostgreSQL with IBM Cloud Block Storage
 4. **CI/CD Pipeline**: Automated build and deployment workflow
 
-## 📊 Deployment Diagram
+## Deployment Diagram
 
 ![Image](https://github.com/user-attachments/assets/0dc2079a-8bd2-48eb-9cb7-28ac9e013e99) 
 
-## 🔄 Sequence Diagram
+##  Sequence Diagram
 
 ![Image](https://github.com/user-attachments/assets/28420753-5ccd-4964-83d9-e17dd5cafd53) 
 
-## 🏗️ Component Diagram
+##  Component Diagram
 
 ![Image](https://github.com/user-attachments/assets/8efd11a1-7a03-4081-bf96-5ff07a2217ac) 
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - IBM Cloud Account
@@ -130,7 +130,7 @@ helm install kong kong/kong \
 3.  Monitor deployments in IBM Cloud Console
     
 
-## 🔍 API Documentation
+##  API Documentation
 
 **Base URL**:  `https://<kong-external-ip>`
 
@@ -165,7 +165,7 @@ helm install kong kong/kong \
 curl -H "apikey: YOUR_API_KEY" https://gateway.example.com/users
 ```
 
-## 🔒 Security Implementation
+##  Security Implementation
 
 **Rate Limiting Policy**
 
